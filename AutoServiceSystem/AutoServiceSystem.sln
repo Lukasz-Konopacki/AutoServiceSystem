@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33423.256
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoServiceSystem", "AutoServiceSystem\AutoServiceSystem.csproj", "{EC4B5B93-F035-43EB-96DC-96C38E059EE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC4B5B93-F035-43EB-96DC-96C38E059EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4B5B93-F035-43EB-96DC-96C38E059EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4B5B93-F035-43EB-96DC-96C38E059EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4B5B93-F035-43EB-96DC-96C38E059EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {837F2C5D-8614-438A-B96D-31A050A7C700}
+	EndGlobalSection
+EndGlobal
