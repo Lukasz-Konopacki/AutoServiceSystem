@@ -20,9 +20,29 @@ namespace AutoServiceSystem
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<Person> people { get; set; } = new List<Person>();
         public MainWindow()
         {
             InitializeComponent();
+
+            people.Add(new Person() { FirstName = "Tim", SecondName = "Cory" });
+            people.Add(new Person() { FirstName = "Joe", SecondName = "Smith" });
+            people.Add(new Person() { FirstName = "Sue", SecondName = "Storm" });
+
+            myComboBox.ItemsSource = people;
         }
+
+        private void runBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"Hello {firstNameField.Text}");
+        }
+    }
+
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string SecondName { get; set; }
+
+        public string FullName => FirstName + " " + SecondName; 
     }
 }

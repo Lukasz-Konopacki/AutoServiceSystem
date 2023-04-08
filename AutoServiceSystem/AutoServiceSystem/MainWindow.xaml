@@ -5,8 +5,65 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoServiceSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+				WindowStartupLocation="CenterScreen"
+        Title="Auto Service" Height="400" Width="800" 
+					FontFamily="Segoe UI Light"  FontSize="28">
     <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="20"/>
+			<ColumnDefinition Width="auto"/>
+			<ColumnDefinition Width="auto"/>
+			<ColumnDefinition Width="auto"/>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="20"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="20"/>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="20"/>
+		</Grid.RowDefinitions>
 
-    </Grid>
+		<TextBlock Grid.Column="1" Grid.Row="1" FontSize="36" 
+							 Grid.ColumnSpan="3" Text="Hello World"/>
+		<TextBlock Grid.Column="1" Grid.Row="2" FontSize="28" 
+							 Margin="0,10" FontFamily="Segoe UI" FontWeight="SemiBold"
+							 Text="Login"/>
+		<TextBox x:Name="firstNameField" Grid.Column="2" Grid.Row="2" 
+						 Margin="10" Width="150"/>
+
+		<ComboBox x:Name="myComboBox" Grid.Column="1" Grid.Row="4"
+							Grid.ColumnSpan="2" FontSize="12">
+			<ComboBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation="Horizontal">
+						<Image Source="C:\Users\lkonopacki\Pictures\avatar.png"
+									Width="20" Height="20"/>
+						<TextBlock Text="{Binding FullName}" />
+					</StackPanel>
+				</DataTemplate>
+			</ComboBox.ItemTemplate>
+		</ComboBox>
+		
+		<Button x:Name="runBtn" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" 
+						Margin="10" Content="Run Me" Click="runBtn_Click"/>
+
+		<!--<Image Grid.Row="1" Grid.Column="4" Grid.RowSpan="6"
+					 Source="C:\Users\lkonopacki\Pictures\avatar.png"/> -->
+			<ScrollViewer Grid.Row="1" Grid.Column="4" Grid.RowSpan="6">
+			<StackPanel  Orientation="Vertical">
+				<MediaElement MaxHeight="400" MaxWidth="400"
+					IsMuted="True" Source="C:\Users\lkonopacki\Pictures\B==D.mp4"/>
+					<Image MaxHeight="400" MaxWidth="400" Source="C:\Users\lkonopacki\Pictures\hola.jpg"/>
+				<Image MaxHeight="400" MaxWidth="400" Source="C:\Users\lkonopacki\Pictures\jad.png"/>
+				<Image MaxHeight="400" MaxWidth="400" Source="C:\Users\lkonopacki\Pictures\romper.png"/>
+				<Image MaxHeight="400" MaxWidth="400" Source="C:\Users\lkonopacki\Pictures\meme.jpg"/>
+			</StackPanel>
+		</ScrollViewer>
+		
+		</Grid>
 </Window>
