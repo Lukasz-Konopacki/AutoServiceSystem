@@ -6,6 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v5.0": {
+      "AutoServiceSystem/1.0.0": {
+        "dependencies": {
+          "Caliburn.Micro": "4.0.212",
+          "Caliburn.Micro.Core": "4.0.212"
+        },
+        "runtime": {
+          "AutoServiceSystem.dll": {}
+        }
+      },
       "Caliburn.Micro/4.0.212": {
         "dependencies": {
           "Caliburn.Micro.Core": "4.0.212",
@@ -94,12 +103,6 @@
         "dependencies": {
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {
-            "assemblyVersion": "4.1.2.0",
-            "fileVersion": "4.6.24705.1"
-          }
         }
       },
       "System.Text.Encoding/4.3.0": {
@@ -119,6 +122,11 @@
     }
   },
   "libraries": {
+    "AutoServiceSystem/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Caliburn.Micro/4.0.212": {
       "type": "package",
       "serviceable": true,

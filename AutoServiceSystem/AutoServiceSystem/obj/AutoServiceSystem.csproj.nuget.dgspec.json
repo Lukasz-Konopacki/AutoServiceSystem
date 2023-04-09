@@ -43,6 +43,16 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Caliburn.Micro": {
+              "target": "Package",
+              "version": "[4.0.212, )"
+            },
+            "Caliburn.Micro.Core": {
+              "target": "Package",
+              "version": "[4.0.212, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

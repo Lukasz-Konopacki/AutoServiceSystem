@@ -1,5 +1,5 @@
 ﻿AutoServiceSystem
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\lkonopacki\Documents\Projekty\AutoServiceSystem\AutoServiceSystem\AutoServiceSystem\App.xaml
 3-280962735
 
-121464118874
+10-1637388347
 197-1839853448
 Views\FirstChildView.xaml;Views\SecondChildView.xaml;Views\ShellView.xaml;
 
-True
+False
 
